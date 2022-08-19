@@ -36,7 +36,7 @@ class BrowserWebViewState extends WebViewState<BrowserWebView> {
   @override
   void initState() {
     // ignore: invalid_null_aware_operator
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
       final _iframe = _iframeElementMap[widget.key];
       _iframe?.onLoad.listen((event) {
         widget.onLoaded?.call(EasyWebViewControllerWrapper._(_iframe));

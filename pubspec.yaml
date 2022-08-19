@@ -18,11 +18,10 @@ dependencies:
   permission_handler: ^9.2.0
   url_launcher: ^6.0.12
   webview_flutter: 2.7.0
-  webview_windows: 
+  webview_windows:
     git:
       url: https://github.com/duynd0504/flutter-webview-windows.git
-      ref: master
-
+      ref: main
 dev_dependencies:
   flutter_test:
     sdk: flutter
